@@ -32,6 +32,10 @@ button:disabled {
     background-color: #CFD8DC;
 }
 
+button:disabled:hover {
+    background-color: #CFD8DC;
+}
+
 main {
     max-width: 1400px;
     min-height: 100%;
@@ -49,14 +53,13 @@ main {
 /* Action style */
 .action.fetch {
     background-color: #66BB6A;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
 }
 
-.action:hover {
+.action.fetch:hover {
     background-color: #4CAF50;
 }
 
@@ -79,6 +82,18 @@ a {
     min-height: 100px;
 }
 
+/* a:nth-child(n) {
+    background-color: #EFEBE9;
+}
+
+a:nth-child(2n) {
+    background-color: #D7CCC8;
+}
+
+a:nth-child(3n) {
+    background-color: #BCAAA4;
+} */
+
 /* Popup style */
 .popup .content {
     text-align: right;
@@ -99,6 +114,10 @@ figcaption {
     color: #424242;
     margin: 5px 0;
 }
+
+/* .content {
+    border-radius: 6px;
+} */
 
 .popup {
     position: fixed;
@@ -124,17 +143,17 @@ figcaption {
     background-color: transparent;
     line-height: 0;
     font-size: 50px;
-    font-weight: bold;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    font-weight: 900;
 }
 
 .popup .content {
     width: 100%;
     margin: auto;
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 900px;
     background-color: #fff;
     border-radius: 6px;
     padding: 20px;
