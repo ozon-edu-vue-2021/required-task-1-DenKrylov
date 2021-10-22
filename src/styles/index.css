@@ -41,6 +41,7 @@ main {
     min-height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 50px;
     background-color: #fff;
@@ -51,8 +52,11 @@ main {
 
 /* Action style */
 .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #66BB6A;
-    font-size: 16px;
+    font-size: 1.7rem;
     padding: 10px 20px;
     border-radius: 6px;
     margin: 10px 0;
@@ -131,9 +135,10 @@ figcaption {
 
 .popup.open {
     visibility: visible;
+    z-index: 1;
 }
 
-.action {
+.action.close{
     position: absolute;
     top: 50px;
     right: 50px;

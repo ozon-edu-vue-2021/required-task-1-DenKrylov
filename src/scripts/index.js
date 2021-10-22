@@ -106,7 +106,6 @@ const renderPictures = function (list) {
 
         fragment.appendChild(clone)
     });
-    console.log(fragment);
     container.appendChild(fragment);
     hideLoader();
 }
