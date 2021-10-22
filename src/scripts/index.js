@@ -90,23 +90,23 @@ const renderPictures = function (list) {
     if (!list.length) {
         throw Error(`Pictures not defined. The list length: ${list.length}`);
     }
-
-    const clone = templateImageCard.content.cloneNode(true);
     const fragment = document.createDocumentFragment();
 
     list.forEach(function (element) {
+        const clone = templateImageCard.content.cloneNode(true);
         const link = clone.querySelector('a');
-
+        const image = clone.querySelector('img');
+    
         link.href = element.url;
         link.dataset.id = element.id;
 
-        const image = clone.querySelector('img');
         image.src = cropImage(element.download_url, 5);
         image.alt = element.author;
         image.classList.add('preview');
+
         fragment.appendChild(clone)
     });
-
+    console.log(fragment);
     container.appendChild(fragment);
     hideLoader();
 }
