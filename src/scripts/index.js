@@ -100,7 +100,7 @@ const renderPictures = function (list) {
         link.href = element.url;
         link.dataset.id = element.id;
 
-        image.src = cropImage(element.download_url, 5);
+        image.src = cropImage(element.download_url, 2);
         image.alt = element.author;
         image.classList.add('preview');
 
